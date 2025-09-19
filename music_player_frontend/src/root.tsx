@@ -20,7 +20,7 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         {!isDev && (
           <link
             rel="manifest"
@@ -30,7 +30,7 @@ export default component$(() => {
         <RouterHead />
         {!isDev && <ServiceWorkerRegister />}
       </head>
-      <body lang="en">
+      <body lang="en" style={{ fontFamily: "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" }}>
         <RouterOutlet />
       </body>
     </QwikCityProvider>
